@@ -2,8 +2,12 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Data Analytics at the Edge</title>
+        <title>Video Analytics at the Edge</title>
         <link href="style.css" rel="stylesheet">
+        <!--<link href="mennu.html" rel="import" />-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
     </head>
     <body>
         <header>
@@ -12,24 +16,40 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="des1.html">Design I</a></li>
-                        <li><a href="des2.html">Desgin II</a></li>
+                        <li><a href="des2.html">Design II</a></li>
                     </ul>
                 </div>
             </div>
         </header>
-        
-        <h1>Project Overview</h1>
-        <h1>Team</h1>
-        <h2>Faculty Advisor</h2>
-        <ul>
-            <li><a href="https://faculty.eng.usf.edu/yasiny/">Dr. Yasin Yilmaz</a></li>
-        </ul>
-        <h2>Student Members</h2>
-        <ul>
-            <li><a href="index.html">Shawn Sheng</a></li>
-            <li><a href="https://www.linkedin.com/in/mikelholmquist/">Mikel Holmquist</a></li>
-            <li><a href="https://www.linkedin.com/in/luke-m-barber/">Luke Barber</a></li>
-        </ul>
+        <div class="mainbody">
+            <body>
+                <br>
+                <h4><i>Welcome to the website for USF 2023 Senior Design Project: Video Analytics at the Edge.</i></h4>
+            <h1>Project Overview</h1>
+                <p>In this project, we seek to develop a platform for Video Analytics on an Edge Device. This project consists of a hardware component (a custom-built camera mount) in conjuction with software running on a <a href="https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-agx-xavier/">NVIDIA Jetson Xavier</a>.</p>
+            <h2>Anomaly Detection</h2>
+                <p>In this project, we specifically wish to utilize the Jetson Xavier as an edge device for the purpose of detecting anomalies. The detection of anomalies is a very broad and generalized topic, that could be utilized in many fields and applications. In this project, we have elected to utilize the detection of anomalies in the context of a security system. To accomplish this several procedures will need to be implemented on the Jetson Xavier, including but not limited to: Object Detection, Object Recognition, Recording, and Motion Tracking.</p>
+            <h2>The Edge</h2>
+                <p>With the increase in bandwidth requirements for surveillance systems, the utilization of current advancement in machine learning for bandwidth reduction has a high industry interest. One key approach to achieve this is to utilize Edge Computing, in other words, pre-processing and analyzing the sensor data at the sensor node. “The Edge” defines effective video analytic methods, such as machine-learning based object detection, performed in the proximity of the optical instrument. Unlike the traditional approach, edge computing reduces the bandwidth requirement between the sensor and the central computer (known as the command center). The prototype developed in this design effort will optimize the cost, size, weight, and power envelopes (C-SWAP) of available off-the-shelf components. The prototype will generally operate autonomously to provide insights into anomalous objects or motions of interest.  Instead of transporting raw or compressed data of the captured video signal, the prototype will compute and process these signals to then deliver a set of pre-defined parameters of interest to the command center, where the decision process will ultimately take place. A user interface will allow users to customize the system so that desired anomalous threshold will be detected as well as giving the users some control and monitoring of the data. This effort will benchmark the differences between video analytics at the edge compared to a traditional surveillance system. </p>
+                <p>Specifically, we believe that this project has the potential to reduce bandwidth by up to 8%.</p>
+            <h2>Applications</h2>
+                <p>This project has multiple applications - with minor tuning it may be utilized in any current application where video monitoring is standard. The scope of this project will seek to build the system in the context of a security system.</p>
+            <h2>Security System</h2>
+                <p>This system will use machine learning to detect anomalous behavior and/or individuals. This will include actions such as physical altercations and behaviors different from the surrounding individuals. This will be accomplished primarily using a custom built <a href="https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html">kNN Algorithm</a>.</p>
+
+            <h1>Team</h1>
+            <h2>Faculty Advisor</h2>
+            <ul>
+                <li><a href="https://faculty.eng.usf.edu/yasiny/">Dr. Yasin Yilmaz</a></li>
+            </ul>
+            <h2>Student Members</h2>
+            <ul>
+                <li><a href="index.html">Shawn Sheng</a></li>
+                <li><a href="https://www.linkedin.com/in/mikelholmquist/">Mikel Holmquist</a></li>
+                <li><a href="https://www.linkedin.com/in/luke-m-barber/">Luke Barber</a></li>
+            </ul>
+            </body>
+        </div>
         
     </body>
 </html>

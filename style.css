@@ -29,3 +29,43 @@ body {
     color: white;
     font-weight:125%;
 }
+
+.doctable table{
+    margin-left: auto;
+    margin-right: auto;
+    border:1;
+}
+
+.doctable table tr th{
+    /*font-family: 'Lato', sans-serif;*/
+    color:lightgray;
+    text-decoration: none;
+    font-size: 1em;
+    padding:5px;
+}
+
+h3 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+a:visited {
+    color:blue;
+}
+
+.missing a:hover{
+    color:lightgray;
+}
+
+.mainbody p,h1,h2,h3,h4,ol,li{
+    margin-left: 50px;
+    margin-right: 50px;
+    text-justify: auto;
+}
+
+.mainbody h4{
+    font-size:1.5em;
+    color: white;
+}
